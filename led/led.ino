@@ -74,5 +74,24 @@ void loop() {
   digitalWrite(led, LOW);
   delay(500);
  }
+
+ client.println("HTTP/1.1 200 OK");
+ client.println("Content-type: text/html");
+ client.println("");
+ client.println("<!DOCTYPE HTML>");
+ client.println("<html>");
+ client.println("<head>");
+ client.println("<title> Internet Controlled LED </title>");
+ client.println("</head>");
+ client.println("<body>");
+ client.println("<h1>Internet Controlled LED</h1>");
+ client.println("<p> With this program, you can control a stupid LED using internet connection!</p>");
+ client.println("<h2> Control Options </h2>");
+ client.println("<li/> <a href='/on'> Turn it on! </a>");
+ client.println("<li/> <a href='/off'> Turn it off! </a>");
+ client.println("<li/> <a href='/blink'> Blink </a>");
+ client.println("<li/> <a href='/double'> Double blink </a>");                
+ client.println("</body>");
+ client.println("</html>");
   
 }
