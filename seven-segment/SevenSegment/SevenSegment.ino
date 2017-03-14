@@ -204,6 +204,20 @@ void loop() {
   value = LOW;
  }
 
-  
+ client.println("HTTP/1.1 200 OK");
+ client.println("Content-type: text/html");
+ client.println("");
+ client.println("<!DOCTYPE HTML>");
+ client.println("<html>");
+ client.println("<head>");
+ client.println("<title> IoT Seven Segment </title>");
+ client.println("</head>"); 
+ client.println("<body>");
+ client.println("<h1> IoT Seven Segment </h1>");
+ client.println("<p> Just send requests like this :");
+ client.println("<br/><pre>/0</pre><br/>");
+ client.println("to show the number you want! It works with digits from 0 to 9");
+ client.println("if you want to turn it off, just <a href='/off'> click here</a></p>");
+ client.println("</body>"); 
 
 }
