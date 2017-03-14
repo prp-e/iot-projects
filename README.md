@@ -1,4 +1,4 @@
-#IoT Projects (for fun :joy:)
+# IoT Projects (for fun :joy:)
 
 This repository is for my IoT projects. I make this projects for fun and learning. 
 
