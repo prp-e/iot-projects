@@ -30,3 +30,17 @@ This turns LED on & off each 0.5 second.
 /double
 ```
 This is a double blink for 0.1 second, and a 0.5 waiting time. 
+
+* Seven Segment : 
+
+This code is written for a ***common anode*** seven segment display. So, when you send a request like this :
+
+```
+/0 
+``` 
+
+It will show the `0` on your seven segment. Also, it works for 0 to 9. If you want to turn your display off, just send this request :
+
+```
+/off
+```
