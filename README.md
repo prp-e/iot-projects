@@ -46,4 +46,5 @@ It will show the `0` on your seven segment. Also, it works for 0 to 9. If you wa
 ```
 
 * Shift Register : 
-The same as ***Seven Segment***, it has no *off* option.
+
+The same as ***Seven Segment***, it has no *off* option. The hardware circuit, includes a `74HC595` *Serial-In, Parallel-Out* shift register, and takes only one of the pins of NodeMCU board. 
