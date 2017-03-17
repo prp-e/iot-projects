@@ -5,8 +5,8 @@
 #define SH_CP 4
 #define SERVER 13
 
-const char* ssid = "Muhammadreza";
-const char* passwd = "Muhammadreza@123456";
+const char* ssid = "";
+const char* passwd = "";
 
 int i = 0;
 
